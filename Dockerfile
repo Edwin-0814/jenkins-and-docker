@@ -1,9 +1,5 @@
-FROM python:3.11-slim
-
-WORKDIR /app
-
+FROM python:3.10-slim
+WORKDIR /app5
 COPY . .
-
-RUN pip install pytest
-
-CMD ["python", "app.py"]
+EXPOSE 9776
+CMD ["python","app.py"]
